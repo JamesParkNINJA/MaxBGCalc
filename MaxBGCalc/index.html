@@ -1,0 +1,73 @@
+<!doctype>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/triangle.css">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>MaxBGCalc | JamesPark.ninja</title>  
+  <meta name="description" content= "Find the most optimal GB Studio background size!" />
+  <meta name="robots" content= "index, follow">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="tri fullwidth">
+    <form id="maxbgcalc" name="maxbgcalc">
+      <div class="tri">
+        <div class="ang le-full">
+          <h1>Max<span>BG</span>Calc</h1></div>
+        <div class="ang le-full">
+          <div class="maxbgcalc-c-options-panel">
+            <div class="tri">
+              <div class="ang le-full md-third">
+
+                <p class="text_small">Calculates the maximum background resolution you can make for <a style="color:red; font-weight:bold;" target="_blank" href="https://www.gbstudio.dev/">GB Studio</a> while reamining under the max size and conforming to 8x8 tiling conventions.</p>
+
+                <p class="text_small"><small>Free Furniture Tileset by yoanqwp#8156 on the community Discord, uploaded by DigiDuncan.</small></p>
+
+              </div>
+              <div class="ang le-full md-third">
+
+                <img src="./images/gb.png" />
+
+              </div>
+              <div class="ang le-full md-third">
+                <label for="maxbgcalc-a-8x8-priority">Snap to 8x8 tiling conventions:
+                  <input type="checkbox" name="maxbgcalc-a-8x8-priority" id="maxbgcalc-a-8x8-priority" checked />
+                </label>
+
+                <span class="text_small">Max Width (px):</span>                
+                <input type="number" name="gb_width" value="1016" />
+                <span class="text_small">Max Height (px):</span>
+                <input type="number" name="gb_height" value="1016" />
+
+                <a href="#" class="maxbgcalc-a-convert">View Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ang le-full" style="padding:.5em;">
+          <strong class="title">Sample Image</strong>
+          <img id="maxbgcalc-c-image" src="https://via.placeholder.com/1016x1016" />
+        </div>
+        <div class="ang le-full" style="padding:.5em;">
+          <strong class="title">GB Tile Preview</strong>
+          <div id="maxbgcalc-c-preview-wrapper">
+            <div id="maxbgcalc-c-preview-image" style="width:1016px; height:1016px;"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
